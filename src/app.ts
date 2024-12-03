@@ -4,7 +4,7 @@ import cors from "cors";
 import fileUpload from "express-fileupload";
 dotenv.config();
 
-// import routes from "./routes/index";
+import routes from "./routes/index";
 import { logger } from "./utils/logger";
 
 const app = express();
@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 app.use(fileUpload());
-// app.use("/api", routes);
+app.use("/api", routes);
 
 app.listen(port, () => {
   logger.info(`⚡️[server]: Server is running at http://localhost:${port}`);

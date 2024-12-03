@@ -4,3 +4,8 @@ pnpm-lock.yaml
 # Logger files
 combined.log
 error.log
+
+# Build file
+dist
+
+.env
