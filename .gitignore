@@ -1,0 +1,6 @@
+node_modules
+pnpm-lock.yaml
+
+# Logger files
+combined.log
+error.log
